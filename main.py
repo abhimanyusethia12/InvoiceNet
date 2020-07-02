@@ -7,7 +7,7 @@ import argparse
 ap = argparse.ArgumentParser()
 
 ap.add_argument("--mode", type=str, help="train|test", choices=["train", "test"], required=True)
-ap.add_argument("--data", help="path to training data", default="data/train_api.pk")
+ap.add_argument("--data", help="path to training data", default="data/dftrain.pk")
 ap.add_argument("--model_path", default="./model", help="path to directory where trained model should be stored")
 ap.add_argument("--load_weights", default="./checkpoints/InvoiceNet_.157-0.53-0.48.hdf5", help="path to load weights")
 ap.add_argument("--word2vec", default="model.bin", help="path to word2vec model")
